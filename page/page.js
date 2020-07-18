@@ -372,5 +372,162 @@ exports.profile = ()=>{
         </body>
       </html>`;}
 
-  
+  exports.home=()=>{
+    return `<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+        <title>Home</title>
+    </head>
+    
+    <body>
+        <nav class="navbar">
+    
+            <div class="navbar_logo">
+                <img src="/images/fireworks.png"></img>
+                <a href="nav_home.html">TEAMFETTI</a>
+            </div>
+        
+            <ul class="navbar_menu">
+                <li><a href="nav_home.html">Home</a></li>
+                <li><a href="nav_members.html">Members</a></li>
+                <li><a href="nav_recruiting">Recruiting</a></li>
+                <li><a href="nav_mypage.html">My Page</a></li>
+            </ul>
+    
+            <div class="navbar_icons">
+                <input></input>
+                <img src="/images/search.png">
+            </div>
+    
+        </nav>
+    
+        <div class="banner">
+            <img src="/images/banner.jpg" width=100%></img>
+            <span id="blackbox"></span>
+            <div class="banner_text">
+                <a href="create_team.html"><h1 class="banner_title">내 머릿속 프로젝트, <br> 함께라면 만들 수 있어요</h1></a>
+                <h3 class="banner_description">딱 맞는 팀메이트를 찾고 상상을 현실로 만들어보세요! </h3>
+            </div>
+        </div>
+    
+        <div class="contents">
+            <div class="container">
+                
+                <h3 class="box_title my_project">📬 정민님의 프로젝트에 관심을 보이는 사람들이 있어요! </h3>
+                
+                <div class="group my_project"></div>
+                <h3 class="box_title rocket_colleagues">🥇 정민님께 추천해드릴, 한계까지 급성장! 챌린징 팀</h3>
+                <div class="group rocket_colleagues">
+                        <ul class="list_item" id="list_item_colleagues">
+                            <li>
+                                <a class="link_item">
+                                    <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
+                                    <div class="item_tit">
+                                        <div class="middle_tit">
+                                            <h4 class="tit_title">프로젝트 이름</h4>
+                                            <span class="tit_intro">프로젝트 설명</span>
+                                        </div>
+                                    </div>
+                                    <div class="item_info">
+                                        <div class="relation_colleague">
+                                            <span class="relation_type">SDG</span>
+                                            <span class="relation_type">UX디자인</span>
+                                            <span class="relation_type">브랜딩</span>
+                                        </div>
+                                        <p class="item_txt">설민혁</p>
+                                        <span class="item_date">2020-07-18</span>
+    
+                                    </div>
+                                    
+                                    <div class="item_option">
+                                        
+                                        <div class="inner_option">
+                                            <a class="ico_chat" href="/chat" onclick="javascript:event.target.port=3400">1:1 chat</a>
+                                            <span class="num_option">4</span>
+                                            <span class="ico_option ico_apply">Quick Apply</span>
+                                            <span class="num_option">2</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link_item">
+                                    <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
+                                    <div class="item_tit">
+                                        <div class="middle_tit">
+                                            <h4 class="tit_title">프로젝트 이름</h4>
+                                            <span class="tit_intro">프로젝트 설명</span>
+                                        </div>
+                                    </div>
+                                    <div class="item_info">
+                                        <div class="relation_colleague">
+                                            <span class="relation_type">태그1</span>
+                                            <span class="relation_type">태그2</span>
+                                            <span class="relation_type">태그3</span>
+                                        </div>
+                                        <p class="item_txt">정영준</p>
+                                        <span class="item_date">2020-07-18</span>
+                                    </div>
+                                    <div class="item_option">
+                                        <div class="inner_option">
+                                        <a class="ico_chat" href="/chat" onclick="javascript:event.target.port=3400">1:1 chat</a>
+                                            <span class="num_option">4</span>
+                                            <span class="ico_option ico_apply">Quick Apply</span>
+                                            <span class="num_option">2</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link_item">
+                                    <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
+                                    <div class="item_tit">
+                                        <div class="middle_tit">
+                                            <h4 class="tit_title">프로젝트 이름</h4>
+                                            <span class="tit_intro">프로젝트 설명</span>
+                                        </div>
+                                    </div>
+                                    <div class="item_info">
+                                        <div class="relation_colleague">
+                                            <span class="relation_type">태그1</span>
+                                            <span class="relation_type">태그2</span>
+                                            <span class="relation_type">태그3</span>
+                                        </div>
+                                        <p class="item_txt">이하영</p>
+                                        <span class="item_date">2020-07-18</span>
+                                    </div>
+                                    <div class="item_option">
+                                        <div class="inner_option">
+                                        <a class="ico_chat" href="/chat" onclick="javascript:event.target.port=3400">1:1 chat</a>
+                                            <span class="num_option">4</span>
+                                            <span class="ico_option ico_apply">Quick Apply</span>
+                                            <span class="num_option">2</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="nav_recruiting.html">
+                            <span class="load_more"><p>모든 프로젝트 둘러보기</p></span>
+                        </a>
+                </div>
+                <h3 class="box_title rocket_teams">✨ 정민님과 좋은 케미를 보여줄 동료들을 소개합니다</h3>
+                <div class="group rocket_teams"></div>
+            </div>
+        </div> 
+        
+        <a href="create_team.html" class="float">
+            내 팀 모집하러 가기 >
+            </a>
+    
+    </body>
+    </html>`;
+  }
   // module.exports = template;
