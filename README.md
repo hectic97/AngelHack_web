@@ -8,6 +8,10 @@
   <li><h4>프론트엔드 엔지니어 : 조정민</h4></li>
   <li><h4>백엔드 및 서버 엔지니어 : 정영준, 설민혁</h4></li>
 </ul>
+## 기술사양
+  node.js : v12.18.2
+  socket.io : v2.3.0
+  mysql : 
 <h2>기능별 구현 일지</h2>
 <h3> <b>1. FrontEnd</b> </h3>
 로그인 페이지 구현(7/17 15:00)<br>
@@ -27,7 +31,7 @@ WENNO 브랜딩 맞춰서 전체 디자인 수정<br>
 Create New Team 페이지 추가 (7/19 01:57)<br>
 채팅창에서 팀 빌딩 성사 시 이동할 페이지 congratulations.html 추가 (7/19 02:31)<br>
 
-<h3> BackEnd </h3>
+<h3> 2. BackEnd </h3>
 회원가입 페이지 생성 및 <br>
 로그인 페이지 이메일 중복 문제 <br>
 db 구축
