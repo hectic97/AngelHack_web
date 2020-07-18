@@ -54,12 +54,16 @@ app.get('/chat_log_save',(req,res)=>{
   res.redirect('/home');
   // res.send(template.home(user_name));
 })
+
 app.get('/images/:id',(req,res)=>{
   var image_id = req.params.id;
   fs.readFile(`static/images/${image_id}`,function(err,data){
     // res.writeHead(200,{'Content-Type':'text/html'});
     res.send(data);
   })
+})
+app.get('/create_team',(req,res)=>{
+  res.send(template.create_team());
 })
 // app.get('/style/:id',(req,res)=>{
 //   var css_id = req.params.id;

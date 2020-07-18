@@ -1,14 +1,17 @@
+/* template --------------------------------------------------------------------------------------------------------------------------*/
+
 body {
     margin:0px;
     display:flex;
     flex-direction: column;
+    background-color: black;
 }
 
 .navbar {
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background-color: #AFC6B9;
+    background-color: black;
 
     margin:0px;
     padding:8px 12px;
@@ -22,18 +25,20 @@ a {
 .navbar_logo {
     display:flex;
     align-items:center;
-    font-family: Quicksand, san-serif;
+    font-family: Montserrat, sans-serif;
           font-style: normal;
-          font-weight: bold;
+          font-weight: 200;
           font-size: 24px;
           text-align: center;
           color: white;
 }
 
 .navbar_logo img {
-    width: 40px;
-    height: 40px;
-    padding: 15px;
+    width: 170px;
+    height: 60px;
+    margin-left:20px;
+    padding: 0px;
+  
 }
 
 .navbar_menu {
@@ -45,9 +50,10 @@ a {
 
 .navbar_menu li {
     padding: 8px 13px;
-    font-family: Quicksand, san-serif;
+    margin: 0px 10px;
+    font-family: Montserrat, sans-serif;
           font-style: normal;
-          font-weight: bold;
+          font-weight: 500;
           font-size: 20px;
           text-align: center;
           color: white;
@@ -71,12 +77,14 @@ a {
 }
 
 .navbar_menu a:hover {
-    color: wheat;
+    color: #7568FA;
 }
 
-#blackbox{
-    background-color:rgba(0, 0, 0, 0.8);
-}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- template */
+
+
 
 .banner_text{
     position:absolute;
@@ -88,30 +96,32 @@ a {
     justify-content: center;
 }
 
-.banner_title {
-    margin:0;
+.banner_title { /*배너 타이틀*/
+    margin-top:50px;
+    margin-bottom:15px;
     font-family: Noto Sans KR, san-serif;
           font-style: normal;
           font-weight: bold;
-          font-size: 5.2vw;
+          font-size: 4.7vh;
           text-align: center;
-          color: wheat;
-          text-shadow: black;
+          color: #FFFC79;
+}
+#first_title{
+    margin-top:20px;
 }
 
 .banner_title:hover{
-    text-decoration: underline;
+    color:#7568FA;
 }
 
-.banner_description {
+.banner_description { /*배너 텍스트*/
     top: 46vh; margin:0;
-    font-family: Noto Sans KR, san-serif;
+    font-family: Montserrat, san-serif;
           font-style: normal;
           font-weight: 300;
-          font-size: 2.4vw;
+          font-size: 2vw;
           text-align: center;
           color: white;
-          text-shadow: black;
 }
 
 .contents{
@@ -133,12 +143,13 @@ a {
 
 .contents .box_title {
         margin: 18px 5px;
+        margin-top: 100px;
         font-family: Noto Sans KR, san-serif;
           font-style: normal;
           font-weight: 700;
-          font-size: 2.5vh;
+          font-size: 3vh;
           text-align: start;
-          color: black;
+          color: white;
 }
 
 
@@ -148,6 +159,7 @@ a {
 .list_item{
     display:flex;
     padding-bottom: 15px;
+    padding-left: 0px;
 }
 
 .list_item li{
@@ -155,7 +167,6 @@ a {
 
     list-style:none;
     margin: 10px;
-    box-shadow: 1px 1px 3px rgb(199, 199, 199);
 }
 
 .list_item li:nth-child(-n+3){margin-top:0}
@@ -181,11 +192,57 @@ a {
 }
 
 .list_item li{
-    background: wheat;
+    background: #FFFC79;
     border-radius: 20px;
     padding: 15px;
-    margin: 5px;
+    padding-bottom: 5px;
+    margin: 0px 10px;
 
+}
+
+
+.group .load_more p{
+    display: inline;
+    margin: 10px;
+    padding: 10px 40px;
+    background: #7568FA;
+    border-radius: 60px;
+
+    color: white;
+    font-family: Noto Sans KR;
+}
+
+.list_item .inner_option{
+    text-align: right;
+    margin:5px 0px;
+    float: right;
+}
+
+.list_item .item_date{
+    float: right;
+    text-align: right;
+    display: block;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom:0.5px solid black;
+}
+
+.item_info, .item_option{
+    display:flex;
+    flex-direction: column;
+    color: black;
+    font-size:1.7vh;
+    font-family: montserrat;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.list_item .item_txt{
+    font-family: Noto Sans KR;
+    text-align: right;
+    font-weight: 700;
+    margin-bottom: 5px;
+    padding-top:0px;
 }
 
 .link_item .relation_type{
@@ -193,8 +250,8 @@ a {
     font-size:1.7vh;
     font-family: Noto Sans KR;
     font-weight: 300;
-    border:1px solid #AFC6B9;
-    color:#AFC6B9;
+    border:1px solid black;
+    color:black;
 
     display:inline-block;height:30px;
     padding:0px 7px;
@@ -203,79 +260,103 @@ a {
 
 .link_item .relation_type:first-of-type{margin-left:0}
 
-.group .load_more p{
-    display: inline;
-    margin: 10px;
-    padding: 10px 40px;
-    background: black;
-    border-radius: 60px;
-
-    color: white;
-    font-family: Noto Sans KR;
-}
-
-.list_item .inner_option{
-    margin:5px 0px;
-    float: right;
-}
-
-.list_item .item_date{
-    float: right;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.item_info, .item_option{
-    color: black;
-    font-size:1.7vh;
-    font-family: Quicksand;
-    font-weight: 500;
-}
-
-.list_item .item_txt{
-    text-align: right;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
 .item_option .ico_chat{
+    display:inline-block;
     background-color: white;
     padding:2px 6px;
     border-radius: 10px;
+    border: 1px solid black;
     font-weight: 700;
-    color: rgb(156, 196, 64);
+    color:  black;
 }
 
 .item_option .ico_apply{
+    display:inline-block;
     background-color: white;
     padding:2px 6px;
+    margin-left: 8px;
     border-radius: 10px;
+    border: 1px solid black;
     font-weight: 700;
-    color: rgb(156, 196, 64);
+    color:  black;
 }
 
 .item_option .num_option{
-    font-family: Quicksand;
+    font-family: montserrat;
     font-weight: bold;
 }
 
 
 /*block contents ---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/* 동료 소개 block contents Start */
+
+#list_item_colleagues .tit_title{
+    text-align:center;
+    font-size: 3.5vh;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+#list_item_colleagues li{
+    background-color:#7568FA;
+}
+
+#list_item_colleagues .tit_title{
+    color:white;
+}
+
+#list_item_colleagues .tit_intro{
+    color:white;
+}
+
+#human_factor{
+    color:white;
+    border: 1px solid white;
+}
+
+#colleague p{
+    background:#FFFC79;
+    color: black;
+}
+
+
+
 .float{
 	position:fixed;
 	width:223px;
 	height:60px;
-	bottom:30px;
-	right:40px;
-    background-color:#AFC6B9;
+	bottom:60px;
+	right:60px;
+    background-color:#7568FA;
     color:#FFF;
-	border-radius:50px;
+    border-radius:50px;
+    border: 1px solid black;
     text-align:center;
     line-height: 60px;
-    box-shadow: 2px 2px 3px #999;
+
     
     font-size:18px;
     font-family: Noto Sans KR;
     font-weight: 700;
 }
+
+.float:hover{
+    background-color: #FFFC79;
+    color: black;
+}
+
+
+
+/* 내가 만든 프로젝트 대시보드 my_project dashboard 
+
+.my_project{
+    display:flex;
+}
+
+.item_project{
+    background-color:#7568FA;
+    background: #7568FA;
+}*/
+
