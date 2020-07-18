@@ -4,122 +4,151 @@ exports.main_pg = (notmatch)=>{
     notmatch = '';
   }
   return `
-  <!doctype   html>
+  <!doctype html>
 
-  <html>
-  
-    <head>
-        <meta charset="utf-8">
-        <title>AngelHack Seoul 2021</title>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    </head>
-  
-    <body>
-  
-      <style>
-        body{margin:0px; padding:0px; font-family: 'Noto Sans KR', sans-serif; background: #FFECDC;}
+<html>
+
+  <head>
+      <meta charset="utf-8">
+      <title>AngelHack Seoul 2021</title>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link href ="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <style>
+      .medium{
+        text-align: center;
+      }
+
+      body{margin:0px; padding:0px; background: black;}
+      
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+        width: 100%;
+        height: 100vh;
+      }
+      .blank{
+        height:4vh;
+      }
+
+      img{
+        width:170px;
+        height:60px;
+        margin-top:70px;
+      }
+
+      input:hover{
+        border:3px solid  #7568FA;
+      }
+      input:focus{
+        background-color: #7568FA;
+        color:white;
+        outline:none;
+      }
+
+
+      button{
+        background-color: #7568FA;
+        margin:10px;
+        padding:5px 15px;
+
+        border-radius: 60px;
+        border:0.3px solid white;
+
+        font-family: montserrat, san-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 35px;
+        text-align: center;
+
+        color: white;
         
-        .container {
-          display: flex;
-          flex-direction: column;
-          align-items:center;
-          justify-content:center;
-          width: 100%;
-          height: 100vh;
-        }
-        .blank{
-          height:10vh;
-        }
-  
-        input:hover{
-          border:3px solid #AFC6B9;
-        }
-        input:focus{
-          background-color:#AFC6B9;
-          color:white;
-          outline:none;
-        }
-  
-  
-        button{
-          background-color: #AFC6B9;
-          margin:10px;
-          padding:5px 15px;
-  
-          border-radius: 60px;
-  
-          font-family: Quicksand, san-serif;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 24px;
-          line-height: 35px;
-          text-align: center;
-  
-          color: #FFFFFF;
-          
-        }
-  
-        h1{
-          font-family: Quicksand, san-serif;
-          text-align:center;
-          font-weight:900;
-          font-size:4vw;
-        }
-  
-        h3{
-          font-family: Quicksand, san-serif;
-          text-align:center;
-          margin-bottom:20px; font-weight:300;
-          font-size:1.5vw;
-        }
-  
-        p{
-          font-family: Quicksand, san-serif;
-          font-weight:900;
-          font-size:1.5vw;
-  
-          text-align:center;
-          display:inline;
-          margin-right:4px;
-          
-        }
-  
-        input{
-          text-align:Center;
-        }
-        
-        .password{
-          margin-bottom: 30px;
-          margin-top: 10px;
-        }
-      </style>
-      <div class="container">
-        <div class="blank"></div>
-        <div class="introduction">
-          <h1> Welcome to AngelHack Seoul 2021!</h1>
-          <h3> If it is your first visit, please Sign Up first.</h3>
-        </div>
-        <form action = '/login_process' method = 'POST'>
-          <div class="ID">
-            <p>Email</p>
-            <input type="email" name="email"></input>
-          </div>
-          <div class="password">
-            <p>password</p>
-            <input type="password" name="password"></input>
-          </div>
-          <button type="submit">Log In</button>
-        </form>
-        <form action = '/sign_up'>
-          <button type='submit'>Sign Up</button>
-        </form>
-        <p style="font-weight:700;font-size:1.3vw;color:red">${notmatch}</p>
+      }
+
+      h1{
+        font-family: montserrat, san-serif;
+        text-align:center;
+        font-weight:700;
+        font-size:4vw;
+        color:white;
+      }
+
+      h3{
+        font-family: montserrat, san-serif;
+        text-align:center;
+        margin-bottom:20px; font-weight:300;
+        font-size:1.5vw;
+        color:white;
+      }
+
+      p{
+        font-family: montserrat, san-serif;
+        font-weight:700;
+        font-size:1.5vw;
+
+        text-align:center;
+        display:inline;
+        margin-right:4px;
+        color:white;
+      }
+
+      input{
+        text-align:Center;
+      }
+
+      .password{
+        margin-bottom: 30px;
+        margin-top: 10px;
+      }
+
+
+    </style>
+
+    <center class="container">
+      <div class="blank"></div>
+      
+      <div class="introduction">
+        <h1> Welcome to AngelHack Seoul 2021!</h1>
+        <h3> If it is your first visit, please Sign Up first.</h3>
       </div>
-    </body>
-  </html>`;
-}
 
+      <form action = '/login_process' method = 'POST'>
+        <div class="ID">
+          <p>Your Name</p>
+          <input type="text" name= "name"></input>
+        </div>
+        <div class="password">
+          <p>Password</p>
+          <input type="password" name="password"></input>
+        </div>
+        <button type="submit">Log In</button>
+      </form>
+      <form action = '/sign_up'>
+          <button type='submit'>Sign Up</button>
+      </form>
+      <p style="font-weight:700;font-size:1.3vw;color:red">${notmatch}</p> 
+
+      <img src="/images/logo.png"></img>
+
+    </center>
+
+
+
+
+
+  </body>
+
+
+</html>
+`;
+}
 
 exports.signup = (notmatch)=>{
       if (notmatch === undefined){
@@ -131,6 +160,8 @@ exports.signup = (notmatch)=>{
           <meta charset="utf-8">
           <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      
           <title>Sign Up</title>
         </head>
         <body>
@@ -138,43 +169,48 @@ exports.signup = (notmatch)=>{
       
             body{
                 position: relative;
-                width: 1440px;
-                height: 1024px;
-                background: #FFECDC;
+                background: black;
                 }
             
+                .container {
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                justify-content:center;
+              }
       
-              .container {
-              display: flex;
-              flex-direction: column;
-              align-items:center;
-              justify-content:center;
-            }
-      
+              img{
+              width:170px;
+              height:60px;
+              position:absolute;
+              top:640px;
+              }
               
             h1{
-              padding-top:20vh;
+              padding-top:14vh;
               padding-bottom:0px;
               margin-bottom:0px;
-                font-family: Quicksand, san-serif;
+                font-family: montserrat, san-serif;
                 font-style: normal;
-                font-weight: bold;
-                font-size: 70px;
+                font-weight: 700;
+                font-size: 4vw;
                 line-height: 139px;
                 text-align: center;
+                color:white;
               }
       
             h3{
               text-align:center;
               margin: 0px;
       
-              font-family: Quicksand, san-serif;
+              font-family: montserrat, san-serif;
               font-style: normal;
-              font-weight: normal;
-              font-size: 24px;
+              font-weight: 300;
+              font-size: 1.5vw;
               line-height: 35px;
               text-align: center;
               letter-spacing: -0.05em;
+              color:white;
             }
       
             p {
@@ -182,28 +218,30 @@ exports.signup = (notmatch)=>{
               text-align:center;
               margin-right:5px;
       
-              font-family: Quicksand, san-serif;
+              font-family: montserrat, san-serif;
               font-style: normal;
-              font-weight: 900;
-              font-size: 20px;
+              font-weight: 700;
+              font-size: 1.5vw;
               line-height: 35px;
               text-align: center;
               letter-spacing: -0.05em;
+              color:white;
       
             }
             
       
             button{
-              background-color: #AFC6B9;
+              background-color: #7568FA;
               margin:0;
               position: absolute;
               width: 110px;
               height: 47px;
-              top: 625px;
+              top: 555px;
       
               border-radius: 60px;
+              border:0.3px solid white;
       
-              font-family: Quicksand, san-serif;
+              font-family: montserrat, san-serif;
               font-style: normal;
               font-weight: bold;
               font-size: 24px;
@@ -215,10 +253,10 @@ exports.signup = (notmatch)=>{
             }
       
             input:hover{
-              border:3px solid #AFC6B9;
+              border:3px solid #7568FA;
             }
             input:focus{
-              background-color:#AFC6B9;
+              background-color:#7568FA;
               color:white;
               outline:none;
             } 
@@ -231,6 +269,8 @@ exports.signup = (notmatch)=>{
           </style>
       
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+          <div class="blank"></div>
           <form action="/signup_process" method="POST">
           <div class="container">
               <h1>Welcome to AngelHack Seoul 2021!</h1>
@@ -238,31 +278,30 @@ exports.signup = (notmatch)=>{
               <h3>You can check your own enter code via e-mail.</h3>
           
               <div class="e-mail">
-                  <p>e-mail </p>
-                  <input style="text-align:center;" type="email" name="email"></input>
+                  <p>Your Name </p>
+                  <input style="text-align:center;" type="text" name='name'></input>
               </div>
               <div class="password">
-                  <p>password </p>
+                  <p>Password </p>
                   <input style="text-align:center;" type="password" name="pw"></input>
               </div>
               <div class="entercode">
                 <p>Enter Code </p>
                 <input style="text-align:center;" type="password" name="entercode"></input>
               </div>
-              
+              </br>
+              <h3 style="font-weight:700;font-size:2.0vw;color:red; text-align:center">${notmatch}</h3>
+              <button type="submit">Join</button>
       
-              <button type="submit">Join</button>      
+              <img src="/images/logo.png"></img>
+      
           </div>
           </form>
-          </br>
-          <h3 style="font-weight:700;font-size:2.0vw;color:red; text-align:center">${notmatch}</h3>
-      
-      
-      
-      
-      
+          <br>
+          
         </body>
-      </html>`;
+      </html>
+      `;
           }
 exports.profile = ()=>{
       return `<!DOCTYPE html>
@@ -372,7 +411,7 @@ exports.profile = ()=>{
         </body>
       </html>`;}
 
-  exports.home=()=>{
+  exports.home=(name)=>{
     return `<!DOCTYPE html>
     <html>
     <head>
@@ -420,10 +459,10 @@ exports.profile = ()=>{
         <div class="contents">
             <div class="container">
                 
-                <h3 class="box_title my_project">📬 정민님의 프로젝트에 관심을 보이는 사람들이 있어요! </h3>
+                <h3 class="box_title my_project">📬 ${name}님의 프로젝트에 관심을 보이는 사람들이 있어요! </h3>
                 
                 <div class="group my_project"></div>
-                <h3 class="box_title rocket_colleagues">🥇 정민님께 추천해드릴, 한계까지 급성장! 챌린징 팀</h3>
+                <h3 class="box_title rocket_colleagues">🥇 ${name}님께 추천해드릴, 한계까지 급성장! 챌린징 팀</h3>
                 <div class="group rocket_colleagues">
                         <ul class="list_item" id="list_item_colleagues">
                             <li>
@@ -518,7 +557,7 @@ exports.profile = ()=>{
                             <span class="load_more"><p>모든 프로젝트 둘러보기</p></span>
                         </a>
                 </div>
-                <h3 class="box_title rocket_teams">✨ 정민님과 좋은 케미를 보여줄 동료들을 소개합니다</h3>
+                <h3 class="box_title rocket_teams">✨ ${name}님과 좋은 케미를 보여줄 동료들을 소개합니다</h3>
                 <div class="group rocket_teams"></div>
             </div>
         </div> 

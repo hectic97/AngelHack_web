@@ -5,6 +5,7 @@ var template = require('./page/page.js');
 var db = require('./lib/db.js')
 var user_register = require('./lib/user_register.js');
 const bodyParser = require('body-parser');
+var user_name;
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(__dirname + '/static'));
 app.get('/', (req,res) => {
@@ -13,19 +14,20 @@ app.get('/', (req,res) => {
 })
 // app.get('/home',(req,res)=>{res.end(`<html><meta charset="utf-8"><a href="/chat" onclick="javascript:event.target.port=3400">채팅서버가기</a></html>`);});
 app.get('/home',(req,res)=>{
-  res.send(template.home());
+  res.send(template.home(user_name));
 })
 app.post('/login_process',(req,res)=>{
+    user_name = req.body.name;
     user_register.login(req,res);
 })
 app.get('/pwerror',(req,res)=>{ //메인페이지 로그인 비밀번호 오류
-    res.send(template.main_pg('비밀번호가 틀립니다!'));
+    res.send(template.main_pg('Wrong Password!'));
 })
 app.get('/sign_up',(req,res)=>{
     res.send(template.signup());
 })
 app.get('/sign_up/emerror',(req,res)=>{
-    res.send(template.signup("That email address is taken. Try another."));
+    res.send(template.signup("That Name is taken. Try another."));
 })
 app.get('/sign_up/codeerror',(req,res)=>{
     res.send(template.signup("Enter Code is not correct!"));
@@ -42,7 +44,16 @@ app.get('/profile',(req,res)=>{
 app.get('/make_team',(req,res)=>{
   res.send(template.make_team());
 })
-
+app.get('/chat_log_save',(req,res)=>{
+  var i = 0;
+  while (i < chat_log_list.length)
+  {
+    fs.appendFileSync('./database/chat_log.txt',chat_log_list[i]+'\n');
+    i++;
+  }
+  res.redirect('/home');
+  // res.send(template.home(user_name));
+})
 app.get('/images/:id',(req,res)=>{
   var image_id = req.params.id;
   fs.readFile(`static/images/${image_id}`,function(err,data){

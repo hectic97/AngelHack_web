@@ -60,6 +60,7 @@
   <option value="Room8">Room8</option>
 </select>
 <a href="/make_team" onclick="javascript:event.target.port=3100">팀 수락</a>
+<a href="/chat_log_save" onclick="javascript:event.target.port=3100">나가기</a> 
 <ul id="messages"></ul>
 <!-- <a href="/new" -->
 <form action="">
@@ -71,20 +72,16 @@
 <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 <script>
   $(() => {
-    const name = prompt('What your name');
+    const name = prompt('What is your nickname ?');
     const socket = io();
     let room = ['room1', 'room2','room3','room4','room5','room6','room7','room8'];
     let num = 1;
-    // let selectoption = document.getElementById("rm");
     socket.emit('joinRoom', num, name);
 
     $('select').change(() => {
       socket.emit('leaveRoom', num, name);
-      // num = Number($('select').text[4]);
       num = Number($('#rm option:selected').val()[4]);
       console.log(num);
-      // num++;
-      // num = num%2;
       socket.emit('joinRoom', num, name);
     });
 
@@ -108,7 +105,7 @@
 
     socket.on('joinRoom', (num, name) => {
       $('#messages').append($('<li>').text(name + '    joined '
-        + room[num-1] + ':)'));
+        + room[num-1] + ' :)'));
     });
   });
 </script>
