@@ -1,0 +1,115 @@
+
+  <!doctype html>
+
+  <html>
+  
+    <head>
+        <meta charset="utf-8">
+        <title>AngelHack Seoul 2021</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+  
+    <body>
+  
+      <style>
+        body{margin:0px; padding:0px; font-family: 'Noto Sans KR', sans-serif; background: #FFECDC;}
+        
+        .container {
+          display: flex;
+          flex-direction: column;
+          align-items:center;
+          justify-content:center;
+          width: 100%;
+          height: 100vh;
+        }
+        .blank{
+          height:10vh;
+        }
+  
+        input:hover{
+          border:3px solid #AFC6B9;
+        }
+        input:focus{
+          background-color:#AFC6B9;
+          color:white;
+          outline:none;
+        }
+  
+  
+        button{
+          background-color: #AFC6B9;
+          margin:10px;
+          padding:5px 15px;
+  
+          border-radius: 60px;
+  
+          font-family: Quicksand, san-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 35px;
+          text-align: center;
+  
+          color: #FFFFFF;
+          
+        }
+  
+        h1{
+          font-family: Quicksand, san-serif;
+          text-align:center;
+          font-weight:900;
+          font-size:4vw;
+        }
+  
+        h3{
+          font-family: Quicksand, san-serif;
+          text-align:center;
+          margin-bottom:20px; font-weight:300;
+          font-size:1.5vw;
+        }
+  
+        p{
+          font-family: Quicksand, san-serif;
+          font-weight:900;
+          font-size:1.5vw;
+  
+          text-align:center;
+          display:inline;
+          margin-right:4px;
+          
+        }
+  
+        input{
+          text-align:Center;
+        }
+        
+        .password{
+          margin-bottom: 30px;
+          margin-top: 10px;
+        }
+      </style>
+      <div class="container">
+        <div class="blank"></div>
+        <div class="introduction">
+          <h1> Welcome to AngelHack Seoul 2021!</h1>
+          <h3> If it is your first visit, please Sign Up first.</h3>
+        </div>
+        <form action = '/login_process' method = 'POST'>
+          <div class="ID">
+            <p>Email</p>
+            <input type="email" name="email"></input>
+          </div>
+          <div class="password">
+            <p>password</p>
+            <input type="password" name="password"></input>
+          </div>
+          <button type="submit">Log In</button>
+        </form>
+        <form action = '/sign_up'>
+          <button type='submit'>Sign Up</button>
+        </form>
+        <p style="font-weight:700;font-size:1.3vw;color:red">${notmatch}</p>
+      </div>
+    </body>
+  </html>
