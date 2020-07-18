@@ -9,9 +9,11 @@
   <li><h4>백엔드 및 서버 엔지니어 : 정영준, 설민혁</h4></li>
 </ul>
 <h2>기술사양<br></h2>
-  <b>node.js : v12.18.2<br>
-  socket.io : v2.3.0<br>
-  mysql : 8.0.20<br></b>
+<ul>
+  <li><b>node.js : v12.18.2<br>
+  <li>socket.io : v2.3.0<br>
+    <li>mysql : 8.0.20<br></b></li>
+</ul>
 <h2>기능별 구현 일지</h2>
 <h3> <b>1. FrontEnd</b> </h3>
 로그인 페이지 구현(7/17 15:00)<br>
