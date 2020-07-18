@@ -1,7 +1,11 @@
 # AngelHack_web
+<h1>2020 AngelHack repository for team AOAS</h1>
 
-AngelHack Seoul 2020 codes
+<b>AngelHack Seoul 2020 codes</b>
 
+
+주제 : 해커톤 대상 온라인 자동 팀매칭 솔루션
+<h2>[기능별 구현 일지]
 로그인 페이지 구현(7/17 15:00)
 사용자 프로파일 질문 파일 구축(7/17 18:00)
 채팅 서버 구축 시작(7/17 20:00)
