@@ -40,7 +40,7 @@ app.get('/profile',(req,res)=>{
 })
 
 app.get('/make_team',(req,res)=>{
-  res.send('팀 결성!!!!!!!!!');
+  res.send(template.make_team());
 })
 
 app.get('/images/:id',(req,res)=>{

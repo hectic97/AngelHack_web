@@ -4,7 +4,7 @@ exports.main_pg = (notmatch)=>{
     notmatch = '';
   }
   return `
-  <!doctype html>
+  <!doctype   html>
 
   <html>
   
@@ -530,4 +530,19 @@ exports.profile = ()=>{
     </body>
     </html>`;
   }
-  // module.exports = template;
+  exports.make_team = ()=>{
+      return `<!DOCTYPE html>
+      <html>
+      <head>
+          
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Congratulations!</title>
+      </head>
+      <body style="margin:0; background-color:black;">
+      
+          <img src="/images/team_building.jpg" style="width:100%;"></img>
+          
+      </body>
+      </html>`
+  }  // module.exports = template;
