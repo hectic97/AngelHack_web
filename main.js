@@ -48,7 +48,8 @@ app.get('/chat_log_save',(req,res)=>{
   var i = 0;
   while (i < chat_log_list.length)
   {
-    fs.appendFileSync('./database/chat_log.txt',chat_log_list[i]+'\n');
+    console.log(chat_log_list);
+    fs.appendFileSync('database/chat_log.txt',chat_log_list[i]+'\n');
     i++;
   }
   res.redirect('/home');
