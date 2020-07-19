@@ -74,7 +74,7 @@ app.get('/collab/:collab_nm',(req,res)=>{
   var collab_nm = req.params.collab_nm;
   res.send(user.collab(collab_nm))
 })
-app.listen(3100,() => console.log('Example app listening on port 3100!'));
+app.listen(3000,() => console.log('Example app listening on port 3000!'));
 
 
 const fs = require('fs');
