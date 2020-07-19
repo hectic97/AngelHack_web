@@ -1,6 +1,7 @@
 <h1>2020 AngelHack repository for team AOAS</h1>
 <h2>주제 : 해커톤 대상 온라인 자동 팀매칭 솔루션</h2>
 <b>AngelHack Seoul 2020 codes</b>
+<br> FE 깃허브 : github.com/zoze99
 <ul>
   <li><h3>참여자 : 조정민, 정영준, 이예경, 이하영, 설민혁</h3></li>
   <li><h4>기획자 : 이하영, 이예경</h4></li>
@@ -58,8 +59,6 @@ DB 구축 <br>
 채팅 나가기 <br>
 팀 확정 페이지 <br>
 로고, 이미지  <br>
-서버 포트 관리 <br>
-CSS 태그 활용 및 Ajax 구현</br>
  <br>
 핏 테스팅 <br>
 개발 <br>
