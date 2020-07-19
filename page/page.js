@@ -291,7 +291,7 @@ exports.signup = (notmatch)=>{
       </html>
       `;
           }
-exports.profile = ()=>{
+exports.nav_mypage = ()=>{
       return `<!DOCTYPE html>
       <html>
       <head>
@@ -317,7 +317,7 @@ exports.profile = ()=>{
                   <li><a href="/home">Home</a></li>
                   <li><a href="nav_members.html">Members</a></li>
                   <li><a href="nav_recruiting">Recruiting</a></li>
-                  <li><a href="nav_mypage.html">My Page</a></li>
+                  <li><a href="/nav_mypage">My Page</a></li>
               </ul>
       
               <div class="navbar_icons">
@@ -451,22 +451,19 @@ exports.profile = ()=>{
                       <h1>About Me</h1>
                       <p>웹프런트엔드 개발자입니다. 2~3년 차 입니다. 주로 사용하는 언어는 Javascript(ES6)/Typescript 이며, 웹프런트엔드 개발로 Angular를 실무에서 쓰고 있습니다. 기초적인 수준이지만, react.js, vue.js, Jquery 도 사용해 본 경험이 있습니다. 프런트엔드 외에언어로는 python, Java, C++  경험도 있습니다. 추가적으로 포토샵이나, 프리미어 같은 디자인 쪽 툴 사용도 가능하며, 이러한 해커톤이나 공모전에 다수 참여해 본 경험이 있습니다. 책임감을 가지고 맡은 것을 수행할 수 있도록 하겠습니다. 그리고 아이디어가 세상을 바꾸는 데 도움이 되고 싶습니다.</p>
                       <h1>Portfolio</h1>
-                      <p>Vitabingirl@portfolio.com</p>
+                      <p>Vitamingirl@portfolio.com</p>
                       <h1>SNS</h1>
                       <p>Instagram @vitamin_girl</p>
                       <a class="ico option ico_chat" href="/chat" onclick="javascript:event.target.port=3400">1:1 chat</a>
-                      <!-- 1:1채팅방 연동해 주세요. -->
-                      <a href="#" class="ico_collab">Let's Collab</a>
-                      <!-- 아마 따로 기능 구현할 필요 X인 기능인 듯 -->
+                      
+                      
                   </ul>
               </div>    
           </div>
-      
-          
-          
-      
-      </body>
-      </html>`;}
+        </body>
+        </html>`
+  
+    ;}
 
   exports.home=(name)=>{
     return `<!DOCTYPE html>
@@ -478,7 +475,7 @@ exports.profile = ()=>{
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" href="css/style.css">
     
         <title>Home</title>
     </head>
@@ -494,7 +491,7 @@ exports.profile = ()=>{
                 <li><a href="/home">Home</a></li>
                 <li><a href="nav_members.html">Members</a></li>
                 <li><a href="nav_recruiting">Recruiting</a></li>
-                <li><a href="nav_mypage.html">My Page</a></li>
+                <li><a href="/nav_mypage">My Page</a></li>
             </ul>
     
             <div class="navbar_icons">
@@ -507,7 +504,7 @@ exports.profile = ()=>{
         <div class="banner">
             <img src="/images/banner.jpg" width=100%></img>
             <div class="banner_text">
-                <a href="#"><h1 class="banner_title">젊은 혁신가들을 위한 온택트 팀 빌딩 서비스, WENNO</h1></a>
+                <a href="create_team.html"><h1 class="banner_title">젊은 혁신가들을 위한 온택트 팀 빌딩 서비스, WENNO</h1></a>
                 <h3 class="banner_description">Keep innovating together, even in COVID-19 </h3>
             </div>
         </div>
@@ -588,8 +585,8 @@ exports.profile = ()=>{
                                     <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                     <div class="item_tit">
                                         <div class="middle_tit">
-                                            <h4 class="tit_title">프로젝트 이름</h4>
-                                            <span class="tit_intro">프로젝트 설명</span>
+                                        <h4 class="tit_title">2인팀 인수하실 팀/팀원 구해요</h4>
+                                        <span class="tit_intro">신한핀테크 해커톤 수상 경력 있는 개발1 & 기획자1 입니다. 모든 주제 가능, UX부터 확실한 Value Proposition까지...(더보기)</span>
                                         </div>
                                     </div>
                                     <div class="item_info">
@@ -598,7 +595,7 @@ exports.profile = ()=>{
                                             <span class="relation_type">열정</span>
                                             <span class="relation_type">도전</span>
                                         </div>
-                                        <p class="item_txt">이하영</p>
+                                        <p class="item_txt">신지훈</p>
                                         <span class="item_date">2020-07-18</span>
                                     </div>
                                     <div class="item_option">
@@ -618,8 +615,8 @@ exports.profile = ()=>{
                                     <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                     <div class="item_tit">
                                         <div class="middle_tit">
-                                            <h4 class="tit_title">프로젝트 이름</h4>
-                                            <span class="tit_intro">프로젝트 설명</span>
+                                        <h4 class="tit_title">집에서 운동하기</h4>
+                                        <span class="tit_intro">비대면 시대에 어울리는 운동은 역시 홈트죠! 자세추정을 통해 적절한 동기부여와 교정팁을 알려주는 서비스입니다. 딥러닝 기반 프...(더보기)</span>
                                         </div>
                                     </div>
                                     <div class="item_info">
@@ -628,7 +625,7 @@ exports.profile = ()=>{
                                             <span class="relation_type">성장</span>
                                             <span class="relation_type">인연</span>
                                         </div>
-                                        <p class="item_txt">설민혁</p>
+                                        <p class="item_txt">김수연</p>
                                         <span class="item_date">2020-07-18</span>
                                     </div>
                                     <div class="item_option">
@@ -646,8 +643,8 @@ exports.profile = ()=>{
                                     <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                     <div class="item_tit">
                                         <div class="middle_tit">
-                                            <h4 class="tit_title">프로젝트 이름</h4>
-                                            <span class="tit_intro">프로젝트 설명</span>
+                                        <h4 class="tit_title">온라인 펫페어&세미나</h4>
+                                        <span class="tit_intro">주 아이디어는 “소상공인들에게 불합리하고 부담이 되던 기존 페어를 온라인으로 대체“하는 것이구요, 냥냥/댕댕 집사님들...(더보기)</span>
                                         </div>
                                     </div>
                                     <div class="item_info">
@@ -656,7 +653,7 @@ exports.profile = ()=>{
                                             <span class="relation_type">완주</span>
                                             <span class="relation_type">열정</span>
                                         </div>
-                                        <p class="item_txt">정영준</p>
+                                        <p class="item_txt">김슬찬</p>
                                         <span class="item_date">2020-07-18</span>
                                     </div>
                                     <div class="item_option">
@@ -674,8 +671,8 @@ exports.profile = ()=>{
                                     <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                     <div class="item_tit">
                                         <div class="middle_tit">
-                                            <h4 class="tit_title">프로젝트 이름</h4>
-                                            <span class="tit_intro">프로젝트 설명</span>
+                                        <h4 class="tit_title">개발자들이 빛자이너 구해요</h4>
+                                        <span class="tit_intro">서버2 안드1 개발자들입니다. 디자이너님이 없다면 그림판으로 디자인할 위기에 처했습니다! 목표 경쟁형 SNS/블록체인 기반...(더보기)</span>
                                         </div>
                                     </div>
                                     <div class="item_info">
@@ -684,7 +681,7 @@ exports.profile = ()=>{
                                             <span class="relation_type">인연</span>
                                             <span class="relation_type">도전</span>
                                         </div>
-                                        <p class="item_txt">이하영</p>
+                                        <p class="item_txt">심효근</p>
                                         <span class="item_date">2020-07-18</span>
                                     </div>
                                     <div class="item_option">
@@ -711,7 +708,7 @@ exports.profile = ()=>{
                                 <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                 <div class="item_tit">
                                     <div class="middle_tit">
-                                        <h4 class="tit_title">조제</h4>
+                                        <a href="/user/User1"><h4 class="tit_title">User1</h4></a> <!-- 여기를 누르면 user1.html로 이동합니다-->
                                         <span class="tit_intro">퍼블리싱 배워 가고 있는 서비스기획자이자 UX디자이너. 달려갑니다.</span>
                                     </div>
                                 </div>
@@ -738,7 +735,7 @@ exports.profile = ()=>{
                                 <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                 <div class="item_tit">
                                     <div class="middle_tit">
-                                        <h4 class="tit_title">조제</h4>
+                                        <a href="/user/User2"><h4 class="tit_title">조제</h4></a>
                                         <span class="tit_intro">퍼블리싱 배워 가고 있는 서비스기획자이자 UX디자이너. 달려갑니다.</span>
                                     </div>
                                 </div>
@@ -765,7 +762,7 @@ exports.profile = ()=>{
                                 <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                 <div class="item_tit">
                                     <div class="middle_tit">
-                                        <h4 class="tit_title">조제</h4>
+                                        <a href="/user/User3"><h4 class="tit_title">조제</h4></a>
                                         <span class="tit_intro">퍼블리싱 배워 가고 있는 서비스기획자이자 UX디자이너. 달려갑니다.</span>
                                     </div>
                                 </div>
@@ -794,7 +791,7 @@ exports.profile = ()=>{
                                 <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                 <div class="item_tit">
                                     <div class="middle_tit">
-                                        <h4 class="tit_title">조제</h4>
+                                        <a href="/user/User4"><h4 class="tit_title">조제</h4></a>
                                         <span class="tit_intro">퍼블리싱 배워 가고 있는 서비스기획자이자 UX디자이너. 달려갑니다.</span>
                                     </div>
                                 </div>
@@ -821,7 +818,7 @@ exports.profile = ()=>{
                                 <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                 <div class="item_tit">
                                     <div class="middle_tit">
-                                        <h4 class="tit_title">조제</h4>
+                                        <a href="/user/User5"><h4 class="tit_title">조제</h4></a>
                                         <span class="tit_intro">퍼블리싱 배워 가고 있는 서비스기획자이자 UX디자이너. 달려갑니다.</span>
                                     </div>
                                 </div>
@@ -835,7 +832,7 @@ exports.profile = ()=>{
                                 </div>
                                 <div class="item_option">
                                     <div class="inner_option">
-                                    <a class="ico option ico_chat" href="/chat" onclick="javascript:event.target.port=3400">1:1 chat</a>
+                                        <a class="ico option ico_chat" href="/chat" onclick="javascript:event.target.port=3400">1:1 chat</a>
                                         <span class="num_option"></span>
                                         <span class="ico_option ico_apply">Likey</span>
                                         <span class="num_option"></span>
@@ -848,7 +845,7 @@ exports.profile = ()=>{
                                 <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                 <div class="item_tit">
                                     <div class="middle_tit">
-                                        <h4 class="tit_title">조제</h4>
+                                        <a href="/user/User6"><h4 class="tit_title">조제</h4></a>
                                         <span class="tit_intro">퍼블리싱 배워 가고 있는 서비스기획자이자 UX디자이너. 달려갑니다.</span>
                                     </div>
                                 </div>
@@ -862,7 +859,7 @@ exports.profile = ()=>{
                                 </div>
                                 <div class="item_option">
                                     <div class="inner_option">
-                                    <a class="ico option ico_chat" href="/chat" onclick="javascript:event.target.port=3400">1:1 chat</a>
+                                        <a class="ico option ico_chat" href="/chat" onclick="javascript:event.target.port=3400">1:1 chat</a>
                                         <span class="num_option"></span>
                                         <span class="ico_option ico_apply">Likey</span>
                                         <span class="num_option"></span>
@@ -887,7 +884,8 @@ exports.profile = ()=>{
     
     </body>
     </html>
-    `;}
+    `;
+}
   exports.make_team = ()=>{
       return `<!DOCTYPE html>
       <html>
@@ -1042,7 +1040,7 @@ exports.profile = ()=>{
             <li><a href="/home">Home</a></li>
             <li><a href="nav_members.html">Members</a></li>
             <li><a href="nav_recruiting">Recruiting</a></li>
-            <li><a href="nav_mypage.html">My Page</a></li>
+            <li><a href="/nav_mypage">My Page</a></li>
         </ul>
 
         <div class="navbar_icons">
@@ -1062,8 +1060,16 @@ exports.profile = ()=>{
         <textarea id="intro_area" name="intro_area" rows="6" cols="50">어떤 프로젝트인지, 당신은 어떤 사람인지, 무엇을 좋아하는지, 어떤 팀원들을 원하는지 등등 자유롭게 당신이 원하는 새로운 팀을 설명해주세요.</textarea>
 
         <h3>3. 이 팀을 가장 적절하게 설명하는 형용사들을 골라주세요. Adjectives that fits your team</h3>
+        
         <div class="adjective_area">
-            <button class="team_adjective">#성취_유의미한 성과를 내고 싶어요 </button>
+            <input type="checkbox" style="opacity:0; position:absolute; opacityleft:9999px;" id="adj_1"></a>
+            <input type="checkbox" style="opacity:0; position:absolute; opacityleft:9999px;" id="adj_2"></a>
+            <input type="checkbox" style="opacity:0; position:absolute; opacityleft:9999px;" id="adj_3"></a>
+            <input type="checkbox" style="opacity:0; position:absolute; opacityleft:9999px;" id="adj_4"></a>
+            <input type="checkbox" style="opacity:0; position:absolute; opacityleft:9999px;" id="adj_5"></a>
+            <input type="checkbox" style="opacity:0; position:absolute; opacityleft:9999px;" id="adj_6"></a>
+            <input type="checkbox" style="opacity:0; position:absolute; opacityleft:9999px;" id="adj_7"></a>
+            <label for="adj_1" class="team_adjective">#성취_유의미한 성과를 내고 싶어요 </label>
             <button class="team_adjective">#성장_함께 배우면서 성장해요 🐣</button>
             <button class="team_adjective">#완주_끝까지 포기하지 말아요 </button>
             <button class="team_adjective">#즐거움_스트레스 받지 말고 즐겨봐요</button>

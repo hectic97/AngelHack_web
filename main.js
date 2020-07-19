@@ -4,6 +4,7 @@ var qs = require('querystring');
 var template = require('./page/page.js');
 var db = require('./lib/db.js')
 var user_register = require('./lib/user_register.js');
+var user = require('./page/user.js');
 const bodyParser = require('body-parser');
 var user_name = "해커톤 참가자"
 app.use(bodyParser.urlencoded({extended: false}));
@@ -33,11 +34,11 @@ app.get('/sign_up/codeerror',(req,res)=>{
 })
 
 app.post('/signup_process',(req,res)=>{
-    
+    user_name = req.body.name;
     user_register.check_signup(req,res);
 });
-app.get('/profile',(req,res)=>{
-    res.send(template.profile());
+app.get('/nav_mypage',(req,res)=>{
+    res.send(template.nav_mypage());
 })
 
 app.get('/make_team',(req,res)=>{
@@ -65,7 +66,14 @@ app.get('/images/:id',(req,res)=>{
 app.get('/create_team',(req,res)=>{
   res.send(template.create_team());
 })
-
+app.get('/user/:user_nm',(req,res)=>{
+  var user_nm = req.params.user_nm;
+  res.send(user.userpage(user_nm));
+})
+app.get('/collab/:collab_nm',(req,res)=>{
+  var collab_nm = req.params.collab_nm;
+  res.send(user.collab(collab_nm))
+})
 app.listen(3100,() => console.log('Example app listening on port 3100!'));
 
 
