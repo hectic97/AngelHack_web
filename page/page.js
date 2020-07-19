@@ -290,7 +290,7 @@ exports.signup = (notmatch)=>{
         </body>
       </html>
       `;
-          }
+        }
 exports.nav_mypage = ()=>{
       return `<!DOCTYPE html>
       <html>
@@ -315,8 +315,8 @@ exports.nav_mypage = ()=>{
           
               <ul class="navbar_menu">
                   <li><a href="/home">Home</a></li>
-                  <li><a href="nav_members.html">Members</a></li>
-                  <li><a href="nav_recruiting">Recruiting</a></li>
+                  <li><a href="/construnction">Members</a></li>
+                  <li><a href="/construnction">Recruiting</a></li>
                   <li><a href="/nav_mypage">My Page</a></li>
               </ul>
       
@@ -475,7 +475,7 @@ exports.nav_mypage = ()=>{
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
     
         <title>Home</title>
     </head>
@@ -489,8 +489,8 @@ exports.nav_mypage = ()=>{
         
             <ul class="navbar_menu">
                 <li><a href="/home">Home</a></li>
-                <li><a href="nav_members.html">Members</a></li>
-                <li><a href="nav_recruiting">Recruiting</a></li>
+                <li><a href="/construction">Members</a></li>
+                <li><a href="/construction">Recruiting</a></li>
                 <li><a href="/nav_mypage">My Page</a></li>
             </ul>
     
@@ -504,8 +504,9 @@ exports.nav_mypage = ()=>{
         <div class="banner">
             <img src="/images/banner.jpg" width=100%></img>
             <div class="banner_text">
-                <a href="create_team.html"><h1 class="banner_title">젊은 혁신가들을 위한 온택트 팀 빌딩 서비스, WENNO</h1></a>
+                <a href="#"><h1 class="banner_title">젊은 혁신가들을 위한 온택트 팀 빌딩 서비스, WENNO</h1></a>
                 <h3 class="banner_description">Keep innovating together, even in COVID-19 </h3>
+                <p class="banner_comment"><br>당신의 새로운 프로젝트, 원격 상황에서도 망설이지 마세요.<br>WENNO가 팀 여정의 시작부터 완주까지 함께할게요.<br>우선 좋은 케미가 예상되는 멋진 사람들부터 만나볼까요?</p>
             </div>
         </div>
     
@@ -514,12 +515,69 @@ exports.nav_mypage = ()=>{
                 
                 <h3 class="box_title my_project" id="first_title">📬 ${name}님의 프로젝트에 관심을 보이는 사람들이 있어요! </h3>
                 
-                <!--
-                <div class="group my_project"></div>
-                    <ul class="dashboard">
-                        <li><span class="item_project"></span></li>
-                        <li></li>
-                    </ul> -->
+                <div class="group dashboard">
+                    <h1 class="dashboard_title">💡 내가 올린 프로젝트</h1>
+                    <img src="/images/astronaut.png" width=80%></img>
+                    <h3 class="my_project_title">Online Team Building Solution 온라인 팀빌딩 솔루션</h3>
+                    <p class="my_project_script">안녕하세요! 해커톤용으로 온라인 팀빌딩을 쉽게 가능하게 하는 서비스를 만들고자 합니다. <br> 현재 아이디어만 디벨롭된 상태예요. 슬랙에서 다들 같이 하는 사람 구하느라 힘드셨죠?<br>이 서비스는 쉽고 빠르고 간편하게 팀을 시작해 도전을 쉬워지게 돕는... (더보기)</p>
+    
+                    <h1 class="dashboard_title">🎉 이 프로젝트에 관심을 보낸 WENNOers    </h1>
+                    <div class="applied_users">
+                        <div class="1">
+                            <img src="/images/applied1.png"></img>
+                            <p class="username">해시브라운</p>
+                        </div>
+                        <div class="1">
+                            <img src="/images/applied2.png"></img>
+                            <p class="username">브레인쥬스</p>
+                        </div>
+                        <div class="1">
+                            <img src="/images/applied3.png"></img>
+                            <p class="username">케이틀린</p>
+                        </div>
+                        <div class="1">
+                            <img src="/images/applied4.png"></img>
+                            <p class="username">마운틴</p>
+                        </div>
+                        <div class="1">
+                            <img src="/images/applied5.png"></img>
+                            <p class="username">웨일즈</p>
+                        </div>                   
+                    </div>
+    
+                    <a href="/construction">
+                        <span id="applied_users_button"><p>자세히 알아보기</p></span>
+                    </a>
+    
+    
+                    <h1 class="dashboard_title">💎 ${name}님과 함께하면 좋을 전략가형 팀크루도 추천드릴게요! </h1>
+                    <div class="rocket_users">
+                        <div class="2">
+                            <img src="/images/applied6.png"></img>
+                            <p class="username">개발토들러</p>
+                        </div>
+                        <div class="2">
+                            <img src="/images/applied7.png"></img>
+                            <p class="username">쿠키캣</p>
+                        </div>
+                        <div class="2">
+                            <img src="/images/applied8.png"></img>
+                            <p class="username">델리만쥬</p>
+                        </div>
+                        <div class="2">
+                            <img src="/images/applied9.png"></img>
+                            <p class="username">벤츄리</p>
+                        </div>
+                        <div class="2">
+                            <img src="/images/applied10.png"></img>
+                            <p class="username">데본</p>
+                        </div>
+                    </div>
+                    <a href="/construction">
+                        <span id="rocket_users_button"><p>더 많은 WENNOers 추천받기</p></span>
+                    </a>
+    
+                </div>
     
     
                 <h3 class="box_title rocket_teams">🥇 ${name}님께 추천해드릴, 한계까지 급성장! 챌린징 팀</h3>
@@ -539,7 +597,7 @@ exports.nav_mypage = ()=>{
                                             <span class="relation_type">성장</span>
                                             <span class="relation_type">열정</span>
                                         </div>
-                                        <p class="item_txt">강동현</p>
+                                        <p class="item_txt">레베럽</p>
                                         <span class="item_date">2020-07-15</span>
                                     </div>
                                     <div class="item_option">
@@ -567,7 +625,7 @@ exports.nav_mypage = ()=>{
                                             <span class="relation_type">즐거움</span>
                                             <span class="relation_type">열정</span>
                                         </div>
-                                        <p class="item_txt">진유림</p>
+                                        <p class="item_txt">마리아</p>
                                         <span class="item_date">2020-07-14</span>
                                     </div>
                                     <div class="item_option">
@@ -585,18 +643,18 @@ exports.nav_mypage = ()=>{
                                     <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                     <div class="item_tit">
                                         <div class="middle_tit">
-                                        <h4 class="tit_title">2인팀 인수하실 팀/팀원 구해요</h4>
-                                        <span class="tit_intro">신한핀테크 해커톤 수상 경력 있는 개발1 & 기획자1 입니다. 모든 주제 가능, UX부터 확실한 Value Proposition까지...(더보기)</span>
+                                            <h4 class="tit_title">2인팀 인수하실 팀/팀원 구해요</h4>
+                                            <span class="tit_intro">신한핀테크 해커톤 수상 경력 있는 개발1 & 기획자1 입니다. 모든 주제 가능, UX부터 확실한 Value Proposition까지...(더보기)</span>
                                         </div>
                                     </div>
                                     <div class="item_info">
                                         <div class="relation_team">
-                                            <span class="relation_type">완주</span>
+                                            <span class="relation_type">성취</span>
+                                            <span class="relation_type">성장</span>
                                             <span class="relation_type">열정</span>
-                                            <span class="relation_type">도전</span>
                                         </div>
-                                        <p class="item_txt">신지훈</p>
-                                        <span class="item_date">2020-07-18</span>
+                                        <p class="item_txt">김타잔</p>
+                                        <span class="item_date">2020-07-15</span>
                                     </div>
                                     <div class="item_option">
                                         <div class="inner_option">
@@ -615,8 +673,8 @@ exports.nav_mypage = ()=>{
                                     <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                     <div class="item_tit">
                                         <div class="middle_tit">
-                                        <h4 class="tit_title">집에서 운동하기</h4>
-                                        <span class="tit_intro">비대면 시대에 어울리는 운동은 역시 홈트죠! 자세추정을 통해 적절한 동기부여와 교정팁을 알려주는 서비스입니다. 딥러닝 기반 프...(더보기)</span>
+                                            <h4 class="tit_title">집에서 운동하기</h4>
+                                            <span class="tit_intro">비대면 시대에 어울리는 운동은 역시 홈트죠! 자세추정을 통해 적절한 동기부여와 교정팁을 알려주는 서비스입니다. 딥러닝 기반 프...(더보기)</span>
                                         </div>
                                     </div>
                                     <div class="item_info">
@@ -625,7 +683,7 @@ exports.nav_mypage = ()=>{
                                             <span class="relation_type">성장</span>
                                             <span class="relation_type">인연</span>
                                         </div>
-                                        <p class="item_txt">김수연</p>
+                                        <p class="item_txt">엘리</p>
                                         <span class="item_date">2020-07-18</span>
                                     </div>
                                     <div class="item_option">
@@ -643,8 +701,8 @@ exports.nav_mypage = ()=>{
                                     <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                     <div class="item_tit">
                                         <div class="middle_tit">
-                                        <h4 class="tit_title">온라인 펫페어&세미나</h4>
-                                        <span class="tit_intro">주 아이디어는 “소상공인들에게 불합리하고 부담이 되던 기존 페어를 온라인으로 대체“하는 것이구요, 냥냥/댕댕 집사님들...(더보기)</span>
+                                            <h4 class="tit_title">온라인 펫페어&세미나</h4>
+                                            <span class="tit_intro">주 아이디어는 “소상공인들에게 불합리하고 부담이 되던 기존 페어를 온라인으로 대체“하는 것이구요, 냥냥/댕댕 집사님들...(더보기)</span>
                                         </div>
                                     </div>
                                     <div class="item_info">
@@ -653,7 +711,7 @@ exports.nav_mypage = ()=>{
                                             <span class="relation_type">완주</span>
                                             <span class="relation_type">열정</span>
                                         </div>
-                                        <p class="item_txt">김슬찬</p>
+                                        <p class="item_txt">떼껄룩</p>
                                         <span class="item_date">2020-07-18</span>
                                     </div>
                                     <div class="item_option">
@@ -671,8 +729,8 @@ exports.nav_mypage = ()=>{
                                     <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                     <div class="item_tit">
                                         <div class="middle_tit">
-                                        <h4 class="tit_title">개발자들이 빛자이너 구해요</h4>
-                                        <span class="tit_intro">서버2 안드1 개발자들입니다. 디자이너님이 없다면 그림판으로 디자인할 위기에 처했습니다! 목표 경쟁형 SNS/블록체인 기반...(더보기)</span>
+                                            <h4 class="tit_title">개발자들이 빛자이너 구해요</h4>
+                                            <span class="tit_intro">서버2 안드1 개발자들입니다. 디자이너님이 없다면 그림판으로 디자인할 위기에 처했습니다! 목표 경쟁형 SNS/블록체인 기반...(더보기)</span>
                                         </div>
                                     </div>
                                     <div class="item_info">
@@ -681,7 +739,7 @@ exports.nav_mypage = ()=>{
                                             <span class="relation_type">인연</span>
                                             <span class="relation_type">도전</span>
                                         </div>
-                                        <p class="item_txt">심효근</p>
+                                        <p class="item_txt">포카리</p>
                                         <span class="item_date">2020-07-18</span>
                                     </div>
                                     <div class="item_option">
@@ -696,7 +754,7 @@ exports.nav_mypage = ()=>{
                             </li>
                         </ul>
                         <div class="blank" style="height:30px"></div>
-                        <a href="nav_recruiting.html">
+                        <a href="/construction">
                             <span class="load_more" id="rocket_teams"><p>모든 프로젝트 둘러보기</p></span>
                         </a>
                 </div>
@@ -708,15 +766,15 @@ exports.nav_mypage = ()=>{
                                 <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                 <div class="item_tit">
                                     <div class="middle_tit">
-                                        <a href="/user/User1"><h4 class="tit_title">User1</h4></a> <!-- 여기를 누르면 user1.html로 이동합니다-->
-                                        <span class="tit_intro">퍼블리싱 배워 가고 있는 서비스기획자이자 UX디자이너. 달려갑니다.</span>
+                                        <a href="user/User1"><h4 class="tit_title">User1</h4></a> <!-- 여기를 누르면 user1.html로 이동합니다-->
+                                        <span class="tit_intro">"퍼블리싱 배워 가고 있는 서비스기획자이자 UX디자이너. 달려갑니다."</span>
                                     </div>
                                 </div>
                                 <div class="item_info">
                                     <div class="relation_colleague"> <!--휴먼팩터 태그들!-->
-                                        <span class="relation_type" id="human_factor">SDG</span>
-                                        <span class="relation_type" id="human_factor">UX디자인</span>
-                                        <span class="relation_type" id="human_factor">브랜딩</span>
+                                        <span class="relation_type" id="human_factor">전략가</span>
+                                        <span class="relation_type" id="human_factor">열정</span>
+                                        <span class="relation_type" id="human_factor">성장</span>
                                     </div>
                                     <p class="item_txt"></p>
                                 </div>
@@ -735,15 +793,15 @@ exports.nav_mypage = ()=>{
                                 <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                 <div class="item_tit">
                                     <div class="middle_tit">
-                                        <a href="/user/User2"><h4 class="tit_title">조제</h4></a>
-                                        <span class="tit_intro">퍼블리싱 배워 가고 있는 서비스기획자이자 UX디자이너. 달려갑니다.</span>
+                                        <a href="/user/조제"><h4 class="tit_title">조제</h4></a>
+                                        <span class="tit_intro">"챌린징한 상황을 즐깁니다! 같이 '진짜 팔리는' 웹서비스를 만들어봐요"</span>
                                     </div>
                                 </div>
                                 <div class="item_info">
                                     <div class="relation_colleague"> <!--휴먼팩터 태그들!-->
-                                        <span class="relation_type" id="human_factor">SDG</span>
-                                        <span class="relation_type" id="human_factor">UX디자인</span>
-                                        <span class="relation_type" id="human_factor">브랜딩</span>
+                                        <span class="relation_type" id="human_factor">실행가</span>
+                                        <span class="relation_type" id="human_factor">성장</span>
+                                        <span class="relation_type" id="human_factor">즐거움</span>
                                     </div>
                                     <p class="item_txt"></p>
                                 </div>
@@ -762,15 +820,15 @@ exports.nav_mypage = ()=>{
                                 <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                 <div class="item_tit">
                                     <div class="middle_tit">
-                                        <a href="/user/User3"><h4 class="tit_title">조제</h4></a>
-                                        <span class="tit_intro">퍼블리싱 배워 가고 있는 서비스기획자이자 UX디자이너. 달려갑니다.</span>
+                                        <a href="/user/산"><h4 class="tit_title">산</h4></a>
+                                        <span class="tit_intro">"실제 돌아가는 서비스에 갈증이 있는 영상 디자이너이자 예비 서비스 기획자입니다."</span>
                                     </div>
                                 </div>
                                 <div class="item_info">
                                     <div class="relation_colleague"> <!--휴먼팩터 태그들!-->
-                                        <span class="relation_type" id="human_factor">SDG</span>
-                                        <span class="relation_type" id="human_factor">UX디자인</span>
-                                        <span class="relation_type" id="human_factor">브랜딩</span>
+                                        <span class="relation_type" id="human_factor">실행가</span>
+                                        <span class="relation_type" id="human_factor">성장</span>
+                                        <span class="relation_type" id="human_factor">열정</span>
                                     </div>
                                     <p class="item_txt"></p>
                                 </div>
@@ -791,15 +849,15 @@ exports.nav_mypage = ()=>{
                                 <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                 <div class="item_tit">
                                     <div class="middle_tit">
-                                        <a href="/user/User4"><h4 class="tit_title">조제</h4></a>
-                                        <span class="tit_intro">퍼블리싱 배워 가고 있는 서비스기획자이자 UX디자이너. 달려갑니다.</span>
+                                        <a href="/user/준"><h4 class="tit_title">준</h4></a>
+                                        <span class="tit_intro">"AI에 관심 많음. 백엔드 개발도 배워 가는 중. 열심히 살고자 함."</span>
                                     </div>
                                 </div>
                                 <div class="item_info">
                                     <div class="relation_colleague"> <!--휴먼팩터 태그들!-->
-                                        <span class="relation_type" id="human_factor">SDG</span>
-                                        <span class="relation_type" id="human_factor">UX디자인</span>
-                                        <span class="relation_type" id="human_factor">브랜딩</span>
+                                        <span class="relation_type" id="human_factor">실행가</span>
+                                        <span class="relation_type" id="human_factor">성취</span>
+                                        <span class="relation_type" id="human_factor">성장</span>
                                     </div>
                                     <p class="item_txt"></p>
                                 </div>
@@ -818,15 +876,15 @@ exports.nav_mypage = ()=>{
                                 <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                 <div class="item_tit">
                                     <div class="middle_tit">
-                                        <a href="/user/User5"><h4 class="tit_title">조제</h4></a>
-                                        <span class="tit_intro">퍼블리싱 배워 가고 있는 서비스기획자이자 UX디자이너. 달려갑니다.</span>
+                                        <a href="/user/스쿠버"><h4 class="tit_title">스쿠버</h4></a>
+                                        <span class="tit_intro">"철학하는 UX 디자이너. 비즈니스, 마케팅, UX까지 아우르는 Deep-Wide를 추구합니다."</span>
                                     </div>
                                 </div>
                                 <div class="item_info">
                                     <div class="relation_colleague"> <!--휴먼팩터 태그들!-->
-                                        <span class="relation_type" id="human_factor">SDG</span>
-                                        <span class="relation_type" id="human_factor">UX디자인</span>
-                                        <span class="relation_type" id="human_factor">브랜딩</span>
+                                        <span class="relation_type" id="human_factor">전략가</span>
+                                        <span class="relation_type" id="human_factor">성장</span>
+                                        <span class="relation_type" id="human_factor">도전</span>
                                     </div>
                                     <p class="item_txt"></p>
                                 </div>
@@ -845,15 +903,15 @@ exports.nav_mypage = ()=>{
                                 <span class="item_thumb" style="background:url(https://t1.daumcdn.net/impact/100up/PROBLEM/20200213/20200213104529/f3183842219a4886a30b0bcfe4bc0154);background-size:cover;background-position: 50% 50%""></span>
                                 <div class="item_tit">
                                     <div class="middle_tit">
-                                        <a href="/user/User6"><h4 class="tit_title">조제</h4></a>
-                                        <span class="tit_intro">퍼블리싱 배워 가고 있는 서비스기획자이자 UX디자이너. 달려갑니다.</span>
+                                        <a href="/user/설"><h4 class="tit_title">설</h4></a>
+                                        <span class="tit_intro">"데이터 사이언스 경험이 있으며, 현재는 풀스택을 목표로 진지하게 개발에 임하고 있습니다."</span>
                                     </div>
                                 </div>
                                 <div class="item_info">
                                     <div class="relation_colleague"> <!--휴먼팩터 태그들!-->
-                                        <span class="relation_type" id="human_factor">SDG</span>
-                                        <span class="relation_type" id="human_factor">UX디자인</span>
-                                        <span class="relation_type" id="human_factor">브랜딩</span>
+                                        <span class="relation_type" id="human_factor">전략가</span>
+                                        <span class="relation_type" id="human_factor">성장</span>
+                                        <span class="relation_type" id="human_factor">열정</span>
                                     </div>
                                     <p class="item_txt"></p>
                                 </div>
@@ -869,7 +927,7 @@ exports.nav_mypage = ()=>{
                         </li>
                     </ul>
                     <div class="blank" style="height:30px"></div>
-                    <a href="nav_members.html">
+                    <a href="/construction">
                         <span class="load_more" id="colleague"><p>모든 WENNOers 둘러보기</p></span>
                     </a>
                 </div>
@@ -885,6 +943,7 @@ exports.nav_mypage = ()=>{
     </body>
     </html>
     `;
+    
 }
   exports.make_team = ()=>{
       return `<!DOCTYPE html>
@@ -1038,8 +1097,8 @@ exports.nav_mypage = ()=>{
 
         <ul class="navbar_menu">
             <li><a href="/home">Home</a></li>
-            <li><a href="nav_members.html">Members</a></li>
-            <li><a href="nav_recruiting">Recruiting</a></li>
+            <li><a href="/construnction">Members</a></li>
+            <li><a href="/construnction">Recruiting</a></li>
             <li><a href="/nav_mypage">My Page</a></li>
         </ul>
 
@@ -1091,7 +1150,8 @@ exports.nav_mypage = ()=>{
             <span class="num_member">최대인원:</span>
             <input name="max_member"></input>
         </div>
-        <button name="submit_newteam">등록하기 Submit</button>
+        <button name="submit_newteam" onclick="alert('팀이 등록 되었습니다! 1:1 chat을 기다려 주세요!')
+        window.location.href='/home'">등록하기 Submit</button>
     </div>
     <div class="blank" style="margin-bottom:50vh"></div>
 

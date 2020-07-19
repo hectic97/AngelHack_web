@@ -71,6 +71,73 @@ app.get('/collab/:collab_nm',(req,res)=>{
   var collab_nm = req.params.collab_nm;
   res.send(user.collab(collab_nm))
 })
+app.get('/bridge',(req,res)=>{
+  res.send(`<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+      <link rel="stylesheet" href="/css/style.css">
+  
+  
+      <title>Persona Test</title>
+  </head>
+  
+  
+  
+  
+  <body>
+      <style>
+          body{
+              width:100%;
+              background-color: black;
+          }
+          
+          .go_test{
+              position:fixed;
+              width:280px;
+              height:60px;
+              bottom:60px;
+              right:42vw;
+              background-color:white;
+              color:black;
+              border-radius:50px;
+              border: 1px solid black;
+              text-align:center;
+              line-height: 60px;
+  
+              
+              font-size:18px;
+              font-family: Noto Sans KR;
+              font-weight: 700;
+          }
+  
+          .go_test:hover{
+              background-color: #FFFC79;
+              color: black;
+          }
+      </style>
+  
+  <img src="/images/typeform_bridge_1.png" style="width:100%;"></img>
+  <img src="/images/typeform_bridge_2.png" style="width:100%;"></img>
+  
+  <a href="https://datsciseol.typeform.com/to/jb9FuEE4" class="go_test">
+      내 팀 페르소나가 궁금해요!
+      </a>
+  
+      
+  </body>
+  </html>
+  `)
+
+})
+app.get('/construction',(req,res)=>{
+  res.send(user.construction());
+})
 app.listen(3000,() => console.log('Example app listening on port 3000!'));
 
 

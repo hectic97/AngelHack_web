@@ -267,7 +267,7 @@ exports.collab = (collab_nm)=>{
     <div class="container">
         <div class="notification">
             <p>짝짝짝! 👏🏻👏👏🏿 ${collab_nm}님께<br>나의 Working Profile을 푸시했습니다!<br>답장이 오길 기다려봐요😘</p>
-            <a href="/nav_mypage" class="back_button">뒤로가기</a>
+            <a href="/user/${collab_nm}" class="back_button">뒤로가기</a>
         </div>
         
     </div>
@@ -275,4 +275,105 @@ exports.collab = (collab_nm)=>{
 
 </body>
 </html>`;
+}
+exports.construction=()=>{
+    return `<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="css/style.css">
+    
+    
+        <title>Sorry!</title>
+    </head>
+    
+    
+    
+    <body>
+        
+        <nav class="navbar">
+    
+            <div class="navbar_logo">
+                <a href="/home"><img src="/images/logo.png"></img></a>
+            </div>
+    
+            <ul class="navbar_menu">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/construction">Members</a></li>
+                <li><a href="/construction">Recruiting</a></li>
+                <li><a href="/nav_mypage">My Page</a></li>
+            </ul>
+    
+            <div class="navbar_icons">
+                <input></input>
+                <img src="/images/search.png"></img>
+            </div>
+    
+        </nav>
+    
+        <style>
+            body{
+                margin:0px;
+                background:black;
+                background-image: url('/images/universe.png');
+            }
+    
+            .container{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 30vh 0px;
+            }
+    
+            h1{
+                text-align:center;
+                margin: 0px;
+    
+                font-family: Montserrat, Noto Sans KR, sans-serif;
+                font-size: 60px;
+                font-weight: 900;
+                color: white;
+            }
+    
+            p{
+                text-align:center;
+                margin: 20px 0px;
+    
+                font-family: Montserrat, Noto Sans KR, sans-serif;
+                font-size: 20px;
+                font-weight: 100;
+                color: white;
+            }
+    
+            .e-mail{
+                width: 400px;
+                height: 30px;
+    
+                background-color: #FFFC79;
+                font-family: Montserrat, Noto Sans KR, sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                color: #7568FA;
+                text-align: center;
+            }
+    
+        </style>
+        
+        <div class="container">
+            <h1>Sorry! We're under Construction.</h1>
+            <p>여기까지 찾아와 주셔서 감사합니다! 이곳은 아직 준비중인 페이지입니다. <br>정식으로 오픈하면 가장 먼저 알려드릴게요.<br>아래 박스에 이메일을 남긴 후 엔터를 눌러주세요 :) <br></p>
+            <input class="e-mail"></input>
+        </div>
+        
+    
+    
+    
+    </body>
+    </html>`
 }
