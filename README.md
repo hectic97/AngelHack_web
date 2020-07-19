@@ -32,17 +32,17 @@
 WENNO 브랜딩 맞춰서 전체 디자인 수정<br>
 Create New Team 페이지 추가 (7/19 01:57)<br>
 채팅창에서 팀 빌딩 성사 시 이동할 페이지 congratulations.html 추가 (7/19 02:31)<br>
-메인 페이지 동료 소개 블록 추가, 배너 수정 (7/19 05:42)
-동료 추천 블록 레이아웃 수정
-개인 프로필 페이지 추가 (7/19 08:56)
-프로필 페이지 > Let's Collab 버튼 액션 페이지 추가 (7/19 15:57)
-메인 페이지 > 동료 추천 블록 타이틀 클릭 시 동료 프로필 페이지 이동 링크 추가 (7/19 15:57)
-nav_home.html 콘텐츠 텍스트 수정
-nav_home.html에 내가 만든 프로젝트 대시보드 추가
-검사하러 가기 페이지 추가 (typeform_bridge.html)
-under construction 페이지 추가 (construction.html)
-필요한 부분 construction.html로 링크 완료
-nav_mypage와 nav_home 텍스트 전체적으로 추가 완료
+메인 페이지 동료 소개 블록 추가, 배너 수정 (7/19 05:42)<br>
+동료 추천 블록 레이아웃 수정<br>
+개인 프로필 페이지 추가 (7/19 08:56)<br>
+프로필 페이지 > Let's Collab 버튼 액션 페이지 추가 (7/19 15:57)<br>
+메인 페이지 > 동료 추천 블록 타이틀 클릭 시 동료 프로필 페이지 이동 링크 추가 (7/19 15:57)<br>
+nav_home.html 콘텐츠 텍스트 수정<br>
+nav_home.html에 내가 만든 프로젝트 대시보드 추가<br>
+검사하러 가기 페이지 추가 (typeform_bridge.html)<br>
+under construction 페이지 추가 (construction.html)<br>
+필요한 부분 construction.html로 링크 완료<br>
+nav_mypage와 nav_home 텍스트 전체적으로 추가 완료<br>
 
 <h3> 2. BackEnd </h3>
 회원가입 페이지 생성 및 <br>
