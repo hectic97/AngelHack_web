@@ -1060,22 +1060,21 @@ exports.nav_mypage = ()=>{
         <textarea id="intro_area" name="intro_area" rows="6" cols="50">어떤 프로젝트인지, 당신은 어떤 사람인지, 무엇을 좋아하는지, 어떤 팀원들을 원하는지 등등 자유롭게 당신이 원하는 새로운 팀을 설명해주세요.</textarea>
 
         <h3>3. 이 팀을 가장 적절하게 설명하는 형용사들을 골라주세요. Adjectives that fits your team</h3>
-        
+        <script>function setColor(e) {
+            var target = e.target,
+                count = +target.dataset.count;
+          
+             target.style.backgroundColor = count%2 === 1 ? "#7FFF00" : '#FFFC79';
+             target.dataset.count = count === 1 ? 0 : 1;}</script>
         <div class="adjective_area">
-            <input type="checkbox" style="opacity:0; position:absolute; opacityleft:9999px;" id="adj_1"></a>
-            <input type="checkbox" style="opacity:0; position:absolute; opacityleft:9999px;" id="adj_2"></a>
-            <input type="checkbox" style="opacity:0; position:absolute; opacityleft:9999px;" id="adj_3"></a>
-            <input type="checkbox" style="opacity:0; position:absolute; opacityleft:9999px;" id="adj_4"></a>
-            <input type="checkbox" style="opacity:0; position:absolute; opacityleft:9999px;" id="adj_5"></a>
-            <input type="checkbox" style="opacity:0; position:absolute; opacityleft:9999px;" id="adj_6"></a>
-            <input type="checkbox" style="opacity:0; position:absolute; opacityleft:9999px;" id="adj_7"></a>
-            <label for="adj_1" class="team_adjective">#성취_유의미한 성과를 내고 싶어요 </label>
-            <button class="team_adjective">#성장_함께 배우면서 성장해요 🐣</button>
-            <button class="team_adjective">#완주_끝까지 포기하지 말아요 </button>
-            <button class="team_adjective">#즐거움_스트레스 받지 말고 즐겨봐요</button>
-            <button class="team_adjective">#인연_좋은 인연 이어가요 🤝</button>
-            <button class="team_adjective">#열정_모든 열정을 불태우겠어요 🔥</button>
-            <button class="team_adjective">#도전_실험적인 시도들을 해볼래요 👩‍🔬</button>
+            
+            <button class="team_adjective" id="button" onclick="setColor(event)" data-count="1">#성취_유의미한 성과를 내고 싶어요 </button>
+            <button class="team_adjective" id="button" onclick="setColor(event)" data-count="1">#성장_함께 배우면서 성장해요 🐣</button>
+            <button class="team_adjective" id="button" onclick="setColor(event)" data-count="1">#완주_끝까지 포기하지 말아요 </button>
+            <button class="team_adjective" id="button" onclick="setColor(event)" data-count="1">#즐거움_스트레스 받지 말고 즐겨봐요</button>
+            <button class="team_adjective" id="button" onclick="setColor(event)" data-count="1">#인연_좋은 인연 이어가요 🤝</button>
+            <button class="team_adjective" id="button" onclick="setColor(event)" data-count="1">#열정_모든 열정을 불태우겠어요 🔥</button>
+            <button class="team_adjective" id="button" onclick="setColor(event)" data-count="1">#도전_실험적인 시도들을 해볼래요 👩‍🔬</button>
         </div>
 
         <h3>4. 지금부터 모집을 시작할까요? Shall we start recruiting now?</h3>
