@@ -1,10 +1,16 @@
 <h1>2020 AngelHack repository for team AOAS</h1>
 <h2>주제 : 해커톤 대상 온라인 자동 팀매칭 솔루션</h2>
 <b>AngelHack Seoul 2020 codes</b>
+
+# 시연 시 사이트 입장을 위해 필요한 엔터 코드 : 123456입니다.
+## AOAS 통합 솔루션 여기서 클론해주시면 감사하겠습니다!
+### FE 계정 업로드 : github.com/zoze99
 <ul>
   <li><h3>참여자 : 조정민, 정영준, 이예경, 이하영, 설민혁</h3></li>
   <li><h4>기획자 : 이하영, 이예경</h4></li>
-  <li><h4>디자이너 : 조정민 </h4></li>
+  <li><h4>UI 디자이너 : 이예경, 조정민, 이하영</h4></li>
+  <li><h4>프론트엔드 엔지니어 : 조정민</h4></li>
+  <li><h4>영상 디자이너 : 이하영 </h4></li>
   <li><h4>프론트엔드 엔지니어 : 조정민</h4></li>
   <li><h4>백엔드 및 서버 엔지니어 : 정영준, 설민혁</h4></li>
 </ul>
@@ -32,17 +38,6 @@
 WENNO 브랜딩 맞춰서 전체 디자인 수정<br>
 Create New Team 페이지 추가 (7/19 01:57)<br>
 채팅창에서 팀 빌딩 성사 시 이동할 페이지 congratulations.html 추가 (7/19 02:31)<br>
-메인 페이지 동료 소개 블록 추가, 배너 수정 (7/19 05:42)<br>
-동료 추천 블록 레이아웃 수정<br>
-개인 프로필 페이지 추가 (7/19 08:56)<br>
-프로필 페이지 > Let's Collab 버튼 액션 페이지 추가 (7/19 15:57)<br>
-메인 페이지 > 동료 추천 블록 타이틀 클릭 시 동료 프로필 페이지 이동 링크 추가 (7/19 15:57)<br>
-nav_home.html 콘텐츠 텍스트 수정<br>
-nav_home.html에 내가 만든 프로젝트 대시보드 추가<br>
-검사하러 가기 페이지 추가 (typeform_bridge.html)<br>
-under construction 페이지 추가 (construction.html)<br>
-필요한 부분 construction.html로 링크 완료<br>
-nav_mypage와 nav_home 텍스트 전체적으로 추가 완료<br>
 
 <h3> 2. BackEnd </h3>
 회원가입 페이지 생성 및 <br>
