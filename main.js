@@ -5,11 +5,10 @@ var template = require('./page/page.js');
 var db = require('./lib/db.js')
 var user_register = require('./lib/user_register.js');
 const bodyParser = require('body-parser');
-var user_name;
+var user_name = "해커톤 참가자"
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(__dirname + '/static'));
 app.get('/', (req,res) => {
-    // res.writeHead(200);
     res.send(template.main_pg());//route routing
 })
 // app.get('/home',(req,res)=>{res.end(`<html><meta charset="utf-8"><a href="/chat" onclick="javascript:event.target.port=3400">채팅서버가기</a></html>`);});
@@ -66,17 +65,11 @@ app.get('/images/:id',(req,res)=>{
 app.get('/create_team',(req,res)=>{
   res.send(template.create_team());
 })
-// app.get('/style/:id',(req,res)=>{
-//   var css_id = req.params.id;
-//   fs.readFile(`static/style`)
-// })
+
 app.listen(3100,() => console.log('Example app listening on port 3100!'));
 
-// var express = require('express');
-// var app = express();
 
 const fs = require('fs');
-// const app = require('express')();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 let chat_log_list = [];
